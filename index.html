@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cairo:900&display=swap" rel="stylesheet">
+  <title>CURRENCY CONVERTOR</title>
+  <style media="screen">
+    .container {
+      margin-top: 100px;
+      background-color: #341f97;
+      border-radius: 8px;
+      height: 150px;
+      position: relative;
+    }
+    .amount_input {
+      width: 250px;
+      margin-top: 35px;
+      margin-left: 50px;
+      height: 74px;
+      padding-left: 3px;
+      float: left;
+      font-size: 40px;
+      border-radius: 10px
+    }
+    label {
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 5px;
+      float: left;
+      color: #fff;
+    }
+    .label_name {
+      left: 55px;
+    }
+    .label_select_from {
+      left: 350px;
+    }
+    .label_select_to {
+      left: 700px;
+    }
+    select {
+      float: left;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    .button {
+      position: relative;
+      margin-top: 35px;
+      margin-left: 50px;
+      width: 80px;
+      height: 78px;
+      font-size: 50px;
+      float: left;
+      border-radius: 20px;
+      background-color: #feca57;
+    }
+    .btn_arrow{
+      position:absolute;
+      left:18px;
+      top:8px;
+    }
+    .align_adjust {
+      width: 250px;
+      margin-top: 35px;
+      margin-left: 100px;
+      height: 80px;
+    }
+    .arrow {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      color: #341f97;
+    }
+    .arrow_container {
+      position: relative;
+      float: left;
+      font-size: 20px;
+    }
+    .right_arrow {
+      left: 20px;
+      color: white;
+      font-size: 80px;
+    }
+    .left_arrow {
+      color: white;
+      font-size: 80px;
+    }
+    .select_from {
+      margin-left: 40px;
+    }
+    footer {
+      background-color: #341f97;
+      color: #fff;
+      position: absolute;
+      top: 100vh;
+      width: 1140px;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body style="width:1140px;margin:0 auto;background-color:#5f27cd;position:relative">
+  <h1 style="font-family: 'Cairo', sans-serif;font-size:60px;color:#fff;">LIVE <span style="color:#e74c3c;">CURRENCY</span> CONVERTOR</h1>
+  <h3 style="color:#dcdde1;">API FROM : https://www.currencystack.io/?ref=public-apis</h3>
+  <div class="container">
+    <div>
+      <label class="label_name" for="">Amount</label>
+      <input id="input" class="amount_input" type="text" name="" value="" placeholder="Amount">
+      <label class="label_select_from" for="">From</label>
+      <select id="convert_from" class="select_from align_adjust" name="">
+        <option value="USD">U.S. Dollar (USD)</option>
+        <option value="EUR">European Euro (EUR) </option>
+        <option value="JPY">Japanese Yen (JPY) </option>
+        <option value="GBP">British Pound (GBP)</option>
+        <option value="CHF">Swiss Franc (CHF) </option>
+        <option value="CAD">Canadian Dollar (CAD) </option>
+        <option value="AUD">Australian Dollar (AUD)</option>
+        <option value="NZD">New Zealand Dollar (NZD)</option>
+        <option value="ZAR">South African Rand (ZAR) </option>
+        <option value="NZD">New Zealand Dollar (NZD)</option>
+      </select>
+      <p class="arrow_container"><span class="arrow right_arrow">&rarr;</span><span class="arrow left_arrow">&larr;</span></p>
+      <label class="label_select_to" for="">To</label>
+      <select id="convert_to" class="align_adjust" name="">
+        <option value="USD">U.S. Dollar (USD)</option>
+        <option value="EUR">European Euro (EUR) </option>
+        <option value="JPY">Japanese Yen (JPY) </option>
+        <option value="GBP">British Pound (GBP)</option>
+        <option value="CHF">Swiss Franc (CHF) </option>
+        <option value="CAD">Canadian Dollar (CAD) </option>
+        <option value="AUD">Australian Dollar (AUD)</option>
+        <option value="NZD">New Zealand Dollar (NZD)</option>
+        <option value="ZAR">South African Rand (ZAR) </option>
+        <option value="NZD">New Zealand Dollar (NZD)</option>
+      </select>
+      <p id="show_converted" class="button"><span class="btn_arrow">&#x0003E;</span></p>
+    </div>
+  </div>
+  <div id="display"></div>
+
+
+  <script src="index.js"></script>
+  <footer>
+    HASSAN &copy;2019
+  </footer>
+</body>
+
+</html>
