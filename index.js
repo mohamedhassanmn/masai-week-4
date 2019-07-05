@@ -30,6 +30,7 @@ for(key in val){
 }
 var symbol={
   GBP:"£",
+  INR:"₹",
   USD:"$",
   EUR:"€",
   JPY:"¥",
